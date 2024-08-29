@@ -1,13 +1,20 @@
 <template>
-  <h1>Hello App!</h1>
-<!--  <p>-->
-<!--    <strong>Current route path:</strong>-->
-<!--  </p>-->
-  <!-- <nav>
-    <RouterLink to="/">Go to Home</RouterLink>
-    <RouterLink to="/about">Go to About</RouterLink>
-  </nav> -->
+  <div id="app">
+    <nav>
+      <RouterLink to="/">Home</RouterLink> |
+      <RouterLink to="/about">About</RouterLink>
+    </nav>
+    <RouterView />
+  </div>
 </template>
+
 <script>
-  // console.log(this.$route)
+import { RouterLink, RouterView } from 'vue-router';
+
+export default {
+  components: {
+    RouterLink,
+    RouterView,
+  },
+};
 </script>
