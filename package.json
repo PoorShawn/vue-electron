@@ -10,6 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "electron-store": "^10.0.0",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
   },

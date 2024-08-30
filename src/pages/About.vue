@@ -4,7 +4,7 @@
 
 <template>
   <div>
-    <h1>About Page</h1>
+    <h1>This is AboutPage components.(RoutView)</h1>
   </div>
 </template>
 

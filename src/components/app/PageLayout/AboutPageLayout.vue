@@ -3,9 +3,8 @@
 </script>
 
 <template>
-  <div>
-    <h1>Home Page</h1>
-  </div>
+  <h3>AboutPage</h3>
+  <RouterView/>
 </template>
 
 <style scoped>

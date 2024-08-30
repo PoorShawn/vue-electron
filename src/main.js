@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from './App.vue';
+import App from './components/App.vue';
 import router from './plugins/router.js'; // 引入刚刚创建的路由配置
 
 const app = createApp(App);
