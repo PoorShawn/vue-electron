@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import RootPage from '../pages/Root.vue';
+import RootPage from '../pages/RootPage.vue';
 import AboutPage from '../pages/About.vue';
 import DefaultPage from "../pages/Default.vue";
 
