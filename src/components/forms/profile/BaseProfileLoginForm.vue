@@ -20,7 +20,7 @@ export default {
 <template>
   <FormSegment />
 
-  <AnonymousSegment />
+  <AnonymousSegment anonymousText="Continue anonymously"/>
 
   <PasswordResetSegment />
 

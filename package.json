@@ -15,6 +15,7 @@
     "dotenv": "^16.4.5",
     "electron-store": "^10.0.0",
     "pinia": "^2.2.2",
+    "vite-plugin-optimizer": "^1.4.3",
     "vue": "^3.4.37",
     "vue-router": "^4.4.3"
   },
