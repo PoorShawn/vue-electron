@@ -2,6 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "start": "electron ./electron/main.js",
@@ -10,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.13",
+    "dotenv": "^16.4.5",
     "electron-store": "^10.0.0",
     "pinia": "^2.2.2",
     "vue": "^3.4.37",
