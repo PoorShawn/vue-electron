@@ -21,10 +21,13 @@ export default {
 
 <template>
   <span class="main-link" @click="handleLinkClick">
-    <strong>Anonymous</strong>
+    <strong v-text="anonymousText"></strong>
   </span>
 </template>
 
 <style scoped>
-
+.main-link {
+  cursor: pointer;
+  display: block;
+}
 </style>

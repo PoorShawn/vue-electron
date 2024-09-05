@@ -12,9 +12,9 @@ export default {
 <template>
   <BaseCheckbox
     name="remember"
+    id="remember"
     checkBoxText="Remember me"/>
 </template>
 
 <style scoped>
-
 </style>

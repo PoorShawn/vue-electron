@@ -1,15 +1,32 @@
 <script>
 export default {
-  name: "SignupSegment"
+  name: "SignupSegment",
+  emits: [
+      'signupLinkClick'
+  ],
+  props: {
+    signupText :{
+      type: String,
+      required: true
+    },
+  },
+  methods: {
+    handleSignupLinkClick () {
+      this.$emit('signupLinkClick')
+    },
+  },
 }
 </script>
 
 <template>
-  <h3>
-    SignupSegment
-  </h3>
+  <span class="main-link" @click="handleSignupLinkClick">
+    <strong v-text="signupText"></strong>
+  </span>
 </template>
 
 <style scoped>
-
+.main-link {
+  cursor: pointer;
+  display: block;
+}
 </style>

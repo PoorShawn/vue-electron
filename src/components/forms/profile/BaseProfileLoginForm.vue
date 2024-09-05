@@ -14,6 +14,18 @@ export default {
     SignupSegment,
     SettingSegment
   },
+  emits: [
+    'passwordResetLinkClick',
+    'passwordSignupLinkClick'
+  ],
+  methods: {
+    handlePasswordResetLinkClick () {
+      this.$emit('passwordResetLinkClick')
+    },
+    handleSignupLinkLinkClick () {
+      this.$emit('passwordSignupLinkClick')
+    }
+  },
 }
 </script>
 
@@ -22,9 +34,15 @@ export default {
 
   <AnonymousSegment anonymousText="Continue anonymously"/>
 
-  <PasswordResetSegment />
+  <PasswordResetSegment
+      passwordResetText="Reset password"
+      @password-reset-link-click="handlePasswordResetLinkClick"
+  />
 
-  <SignupSegment />
+  <SignupSegment
+      signupText="Sign up"
+      @signup-link-click="handleSignupLinkLinkClick"
+  />
 
   <SettingSegment />
 </template>

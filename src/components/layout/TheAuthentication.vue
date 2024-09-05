@@ -46,13 +46,20 @@ export default {
 <template>
 <!--  通过改变 activeForm 的值来改变组件的调用-->
   <BaseProfileLoginForm
-    v-if="isLogin"/>
+    v-if="isLogin"
+    @password-reset-link-click="handlePasswordResetLinkClick"
+    @password-signup-link-click="handleSignupLinkClick"
+  />
 
   <BaseProfilePasswordResetForm
-    v-else-if="isPasswordReset"/>
+    v-else-if="isPasswordReset"
+    @back-link-click="handleBackLinkClick"
+  />
 
   <BaseProfileCreateForm
-    v-else-if="isSignup"/>
+    v-else-if="isSignup"
+    @login-link-click="handleLoginLinkClick"
+  />
 </template>
 
 <style scoped>
