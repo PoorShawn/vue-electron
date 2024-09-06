@@ -4,7 +4,9 @@
 
 <template>
   <h3>RootPage</h3>
-  <RouterView/>
+  <div class="ui container main-container main-view">
+    <RouterView/>
+  </div>
 </template>
 
 <style scoped>

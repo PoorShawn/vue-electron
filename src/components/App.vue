@@ -7,13 +7,17 @@
     </nav>
     <RouteDisplay />
 
-    <PageLayout />
+    <TheStoreObserver @init="handleStoreInit"/>
+
+    <PageLayout v-if="isStoreSet"/>
   </div>
 </template>
 
 <script>
 import { RouterLink, RouterView } from 'vue-router';
 import RouteDisplay from "../helpers/RouteDisplay.vue";
+
+import TheStoreObserver from "@/components/layout/observers/TheStoreObserver.vue";
 import PageLayout from "./app/PageLayout.vue";
 
 export default {
@@ -21,7 +25,18 @@ export default {
     RouterLink,
     RouterView,
     RouteDisplay,
+    TheStoreObserver,
     PageLayout
   },
+  data () {
+    return {
+      isStoreSet: false
+    };
+  },
+  methods: {
+    handleStoreInit () {
+      this.isStoreSet = true;
+    },
+  }
 };
 </script>
