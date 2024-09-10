@@ -10,8 +10,7 @@ function getAction ({name, key}) {
 
     if (store) {
         const keyFormatted = snakeCase(key);
-        const actionName = camelCase(`set-${keyFormatted}`);
-
+        const actionName = camelCase(`set_${keyFormatted}`);
         return store()[actionName];
     }
 }

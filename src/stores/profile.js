@@ -18,6 +18,11 @@ const data = {
             return state.info?.id?.toString();
         },
     },
+    actions: {
+        setIsAnonymous (value) {
+            this.isAnonymous = value
+        }
+    }
 }
 
 export default defineStore(

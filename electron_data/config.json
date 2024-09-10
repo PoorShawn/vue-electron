@@ -117,7 +117,7 @@
 	"player.isPauseOnVideoPlay": true,
 	"profile.connections": {},
 	"profile.info": null,
-	"profile.isAnonymous": true,
+	"profile.isAnonymous": false,
 	"profile.isRemember": false,
 	"profile.isShowPlaying": false,
 	"profile.language": "en",

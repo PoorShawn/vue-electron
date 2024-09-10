@@ -45,23 +45,32 @@ export default {
 
 <template>
 <!--  通过改变 activeForm 的值来改变组件的调用-->
-  <BaseProfileLoginForm
-    v-if="isLogin"
-    @password-reset-link-click="handlePasswordResetLinkClick"
-    @password-signup-link-click="handleSignupLinkClick"
-  />
+  <div class="the-authentication middle-aligned-column">
+    <div class="form-segment-container">
+      <BaseProfileLoginForm
+          v-if="isLogin"
+          @password-reset-link-click="handlePasswordResetLinkClick"
+          @password-signup-link-click="handleSignupLinkClick"
+      />
 
-  <BaseProfilePasswordResetForm
-    v-else-if="isPasswordReset"
-    @back-link-click="handleBackLinkClick"
-  />
+      <BaseProfilePasswordResetForm
+          v-else-if="isPasswordReset"
+          @back-link-click="handleBackLinkClick"
+      />
 
-  <BaseProfileCreateForm
-    v-else-if="isSignup"
-    @login-link-click="handleLoginLinkClick"
-  />
+      <BaseProfileCreateForm
+          v-else-if="isSignup"
+          @login-link-click="handleLoginLinkClick"
+      />
+    </div>
+  </div>
 </template>
 
-<style scoped>
+<style lang="sass" scoped>
+.the-authentication
+  margin-top: 8vh
 
+.form-segment-container
+  max-width: 450px !important
+  margin-top: 2.5rem
 </style>

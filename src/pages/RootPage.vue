@@ -24,11 +24,16 @@ export default {
         }
     ),
     isRenderBrowserTabs() {
+      console.log(`isProfileAnonymous: ${this.isProfileAnonymous}`);
       return (
           this.isProfileAnonymous || this.profileId
-      )
+      );
+      // return true;
     },
   },
+  mounted () {
+    console.log(`isProfileAnonymous: ${this.isProfileAnonymous}`);
+  }
 }
 </script>
 
@@ -36,7 +41,6 @@ export default {
   <!--  通过改变 isRenderBrowserTabs 的值来改变组件的调用-->
   <TheBrowserTabs
     v-if="isRenderBrowserTabs"/>
-
   <TheAuthentication
     v-else/>
 </template>

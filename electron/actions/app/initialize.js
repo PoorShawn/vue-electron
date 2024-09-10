@@ -7,7 +7,6 @@ import setupApp from './setup.js';
 export default function (){
     //设置全局变量
     setGlobalVariables();
-
     //设置Electron的事务（event）
     setAppEvents();
 

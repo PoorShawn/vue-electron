@@ -1,0 +1,66 @@
+.icon
+  &.colored
+    &.lastfm
+      color: $colorLastfm !important
+    &.vk
+      color: $colorVk !important
+    &.odnoklassniki
+      color: $colorOdnoklassniki !important
+    &.bandcamp
+      color: $colorBandcamp !important
+    &.soundcloud
+      color: $colorSoundCloud !important
+    &.spotify
+      color: $colorSpotify !important
+    &.youtube
+      color: $colorYouTube !important
+    &.discord
+      color: $colorDiscord !important
+
+.icon.muffon
+  &:before
+    content: $muffonIconUrl
+  &:not(.colored)
+    @extend .colorless
+
+.icon.deezer
+  &:before
+    content: $deezerIconUrl !important
+  &:not(.colored):before
+    @extend .colorless
+
+.icon.discogs
+  &:before
+    content: $discogsIconUrl
+  &:not(.colored):before
+    filter: opacity(0.85)
+
+.icon.genius
+  &:before
+    content: $geniusIconUrl
+  &:not(.colored)
+    @extend .colorless
+
+.icon.musicbrainz
+  &:before
+    content: $musicBrainzIconUrl
+  &:not(.colored):before
+    @extend .colorless
+
+.icon.musixmatch
+  &:before
+    content: $musixMatchIconUrl
+  &:not(.colored):before
+    @extend .colorless
+
+.icon.yandexmusic
+  &:before
+    content: $yandexMusicIconUrl
+  &:not(.colored):before
+    @extend .colorless
+
+.icon.youtubemusic
+  &:before
+    content: $youTubeMusicIconUrl
+  &:not(.colored):before
+    @extend .colorless

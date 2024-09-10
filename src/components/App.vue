@@ -1,11 +1,11 @@
 <template>
   <div id="app">
-    <nav>
-      <RouterLink to="/">Root</RouterLink> |
-      <RouterLink to="/about">About</RouterLink> |
-      <RouterLink to="/default">Default</RouterLink>
-    </nav>
-    <RouteDisplay />
+<!--    <nav>-->
+<!--      <RouterLink to="/">Root</RouterLink> |-->
+<!--      <RouterLink to="/about">About</RouterLink> |-->
+<!--      <RouterLink to="/default">Default</RouterLink>-->
+<!--    </nav>-->
+<!--    <RouteDisplay />-->
 
     <TheStoreObserver @init="handleStoreInit"/>
 

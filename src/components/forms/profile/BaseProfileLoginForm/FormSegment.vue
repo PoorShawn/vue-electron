@@ -4,13 +4,16 @@ import BaseProfilePasswordField from "../../../fields/profile/BaseProfilePasswor
 import BaseProfileRememberField from "../../../fields/profile/BaseProfileRememberField.vue";
 import BaseSubmitButton from "../../../buttons/BaseSubmitButton.vue"
 
+import BaseSegmentContainer from "@/components/container/segments/BaseSegmentContainer.vue";
+
 export default {
   name: "FormSegment",
   components: {
     BaseProfileEmailField,
     BaseProfilePasswordField,
     BaseProfileRememberField,
-    BaseSubmitButton
+    BaseSubmitButton,
+    BaseSegmentContainer
   },
   mounted() {
     this.focusEmail();
@@ -24,13 +27,15 @@ export default {
 </script>
 
 <template>
-  <BaseProfileEmailField ref="email" emailText="Email"/>
+  <BaseSegmentContainer>
+    <BaseProfileEmailField ref="email" emailText="Email"/>
 
-  <BaseProfilePasswordField passwordText="Password"/>
+    <BaseProfilePasswordField passwordText="Password"/>
 
-  <BaseProfileRememberField />
+    <BaseProfileRememberField />
 
-  <BaseSubmitButton actionKey="Login in"/>
+    <BaseSubmitButton actionKey="Login in"/>
+  </BaseSegmentContainer>
 </template>
 
 <style scoped>
