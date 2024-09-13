@@ -1,15 +1,16 @@
 <template>
   <div id="app">
-<!--    <nav>-->
-<!--      <RouterLink to="/">Root</RouterLink> |-->
-<!--      <RouterLink to="/about">About</RouterLink> |-->
-<!--      <RouterLink to="/default">Default</RouterLink>-->
-<!--    </nav>-->
-<!--    <RouteDisplay />-->
-
     <TheStoreObserver @init="handleStoreInit"/>
 
     <PageLayout v-if="isStoreSet"/>
+
+        <nav>
+          <RouterLink to="/">Root</RouterLink> |
+          <RouterLink to="/about">About</RouterLink> |
+          <RouterLink to="/default">Default</RouterLink> |
+          <RouterLink to="/home">Home</RouterLink>
+        </nav>
+        <RouteDisplay />
   </div>
 </template>
 

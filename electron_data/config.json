@@ -69,7 +69,7 @@
 		"",
 		""
 	],
-	"layout.activeTabId": null,
+	"layout.activeTabId": "87ec5703-0e37-4f76-9eb4-4ce1ea854d8f",
 	"layout.backgroundImages": [],
 	"layout.backgroundImagePath": null,
 	"layout.isCachePages": true,
@@ -117,7 +117,7 @@
 	"player.isPauseOnVideoPlay": true,
 	"profile.connections": {},
 	"profile.info": null,
-	"profile.isAnonymous": false,
+	"profile.isAnonymous": true,
 	"profile.isRemember": false,
 	"profile.isShowPlaying": false,
 	"profile.language": "en",

@@ -3,6 +3,8 @@ import RootPage from '../pages/RootPage.vue';
 import AboutPage from '../pages/About.vue';
 import DefaultPage from "../pages/Default.vue";
 
+import HomePage from '../pages/home/MainPage.vue';
+
 const routes = [
     {
         path: '/',
@@ -19,6 +21,11 @@ const routes = [
         name: 'Default',
         component: DefaultPage,
 
+    },
+    {
+        path: '/home',
+        name: 'HomePage',
+        component: HomePage,
     }
 ];
 

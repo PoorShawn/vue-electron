@@ -5,7 +5,7 @@ export default function (){
 
     global.tray = null;
 
-    global.tebsPabelHeight = 50;
+    global.tabsPanelHeight = 50;
 
     global.discordClient = null;
 }
